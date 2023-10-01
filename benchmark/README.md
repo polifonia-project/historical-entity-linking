@@ -12,7 +12,7 @@ As the PKE framework automatically recognises named entities in its text-to-AMR 
 
 ## Sampling
 
-The annotated sentences of MHERCL v0.1 were extrapolated from the [Polifonia Textual Corpus (PTC)](https://github.com/polifonia-project/Polifonia-Corpus). They originate from a sample of the English [_Periodicals_](https://doi.org/10.5281/zenodo.6671912) module of the corpus, whose documents' publication dates range from 1823 to 1900. They were processed through the [Polifonia Knowledge Extractor (PKE)](https://github.com/polifonia-project/Polifonia-Knowledge-Extractor) and are part of the [Filtered AMR Graphs Bank] (https://zenodo.org/record/7025779\#.ZDls8OxBy3I).
+The annotated sentences of MHERCL v0.1 were extrapolated from the [Polifonia Textual Corpus (PTC)](https://github.com/polifonia-project/Polifonia-Corpus). They originate from a sample of the English [_Periodicals_](https://doi.org/10.5281/zenodo.6671912) module of the corpus, whose documents' publication dates range from 1823 to 1900. They were processed through the [Polifonia Knowledge Extractor (PKE)](https://github.com/polifonia-project/Polifonia-Knowledge-Extractor) and are part of the [Filtered AMR Graphs Bank](https://zenodo.org/record/7025779\#.ZDls8OxBy3I).
 
 ## Annotation Guidelines
 
