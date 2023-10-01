@@ -1,5 +1,27 @@
 # MHERCL v0.1 - Benchmark
 
+We aim to mitigate the need for gold-standard resources containing NERC- and EL-annotated historical documents by releasing a new model for historical entity linking and a new benchmark for the task. We release the Musical Heritage Historical named Entities Recognition, Classification and Linking benchmark (MHERCL v0.1) to enrich the landscape of gold-standard resources containing NERC- and EL-annotated historical documents.
+
+## Statistics
+
+#### MHERCL v0.1 - Dataset Stats
+
+| Dataset                     | Lang. | #docs | #sents | #tokens |
+|-----------------------------|-------|--------|---------|----------|
+| MHERCL v0.1 | EN    | 21   | 715   | 15.734 |
+
+
+#### MHERCL v0.1 - Named Entities Superficial Mentions Stats
+
+
+|        | #mentions | #types | noisy    | NIL      |
+|--------|-----------|---------|----------|----------|
+| all    | 1.199   | -       | 0,125  | 0,3403|
+| unique | 975     | 49    | 0,1527 | 0,4051 |
+
+As summarised in the tables above, MHERCL v0.1 is made of 715 sentences, extrapolated from 21 documents (historical periodicals). MHERCL v0.1 includes 975 unique named entities belonging to 49 different types. On the total of annotated named entity mentions, 34% could not be linked to a QID. Those are cases in which the annotators could not identify a Wikidata entry corresponding to the named entity mention. Those cases are annotated with the label NIL. On the total of annotated named entity mentions, 12,5% are _noisy_, namely impacted by errors due to OCR.
+
+
 ## Exploratory Study
 
 As the PKE framework automatically recognises named entities in its text-to-AMR parsing step, we ran a preliminary experiment to evaluate the off-the-shelf performance of the PKE text-to-AMR parser and its embedded entity linker, BLINK. We focused on a sample of 2205 sentences taken from the _Periodicals_ module of the PTC and on named entities of type person (pNE). The results are reported in the Table below and shared in a [TSV file](benchmark/preliminary_study/ptc_sample_pne_preliminary_study.tsv) in this repository.
@@ -87,26 +109,6 @@ A full list of the types used for Named Entities classification is in the table 
 
 
 Inter-annotator agreement (IAA) measures the reliability of human annotations by estimating consistency among annotators. To measure IAA, we made two annotators independently annotate 27 sentences. We calculated Krippendorff's alpha for nominal metric on the resulting annotations using [Fast Krippendorf](https://github.com/pln-fing-udelar/fast-krippendorff). We opted for Krippendorff's alpha for its flexibility and resilience in handling missing values. We obtained the following result: 0.82654. 
-
-## Statistics
-
-#### MHERCL v0.1 - Dataset Stats
-
-| Dataset                     | Lang. | #docs | #sents | #tokens |
-|-----------------------------|-------|--------|---------|----------|
-| MHERCL v0.1 | EN    | 21   | 715   | 15.734 |
-
-
-#### MHERCL v0.1 - Named Entities Superficial Mentions Stats
-
-
-|        | #mentions | #types | noisy    | NIL      |
-|--------|-----------|---------|----------|----------|
-| all    | 1.199   | -       | 0,125  | 0,3403|
-| unique | 975     | 49    | 0,1527 | 0,4051 |
-
-As summarised in the tables above, MHERCL v0.1 is made of 715 sentences, extrapolated from 21 documents (historical periodicals). MHERCL v0.1 includes 975 unique named entities belonging to49$ different types. On the total of annotated named entity mentions, 34% could not be linked to a QID. Those are cases in which the annotators could not identify a Wikidata entry corresponding to the named entity mention. Those cases are annotated with the label NIL. On the total of annotated named entity mentions, 12,5% are _noisy_, namely impacted by errors due to OCR.
-
 
 ## Format
 
