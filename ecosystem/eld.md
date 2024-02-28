@@ -3,8 +3,8 @@ component-id: eld
 name: Entity Linking Dynamics
 description: a new model for historical entity linking
 type: SoftwareLibrary
-release-date: 01/10/2023
-release-number: v0.1
+release-date: 28/02/2023
+release-number: v1.0
 work-package: 
 - WP4
 licence:
