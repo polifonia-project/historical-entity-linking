@@ -3,8 +3,8 @@ component-id: mhercl
 name: Musical Heritage historical named Entities Recognition, Classification and Linking (MHERCL)
 description: a new benchmark for historical entity linking
 type: Dataset
-release-date: 01/10/2023
-release-number: v0.1
+release-date: 28/02/2023
+release-number: v1.0
 work-package: 
 - WP4
 licence:
