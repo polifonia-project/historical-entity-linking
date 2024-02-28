@@ -36,7 +36,7 @@ Polifonia-Corpus
 │   │
 │   └───preliminary_study
 │   │
-│   └───v0.1
+│   └───v1.0
 │   
 └───images
 |
