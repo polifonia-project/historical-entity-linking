@@ -17,7 +17,7 @@ In the AMR graph, the NEs recognition and classification (NERC) performed by [SP
 ## Contribution 
 
 We aim to mitigate the need for gold-standard resources containing NERC- and EL-annotated historical documents by releasing a new model for historical entity linking and a new benchmark for the task. We release:
-- [Musical Heritage Historical named Entities Recognition, Classification and Linking (MHERCL)]([mhercl_v1.0.tsv](https://github.com/polifonia-project/historical-entity-linking/blob/main/benchmark/v1.0/mhercl_v1.0.tsv)) benchmark to enrich the landscape of gold-standard resources containing NERC- and EL-annotated historical documents;
+- [Musical Heritage Historical named Entities Recognition, Classification and Linking (MHERCL)](https://github.com/polifonia-project/historical-entity-linking/blob/main/benchmark/v1.0/mhercl_v1.0.tsv) benchmark to enrich the landscape of gold-standard resources containing NERC- and EL-annotated historical documents;
 - [Entity Linking Dynamics](https://github.com/polifonia-project/historical-entity-linking/tree/main/model/eld), an innovative model for Entity Linking that grounds its inner entity disambiguation process to the context in which entities appear, relying on relaxation labelling processes.
 - [C-BLINK](https://github.com/polifonia-project/historical-entity-linking/tree/main/model/c-blink), an adapted version of [BLINK](https://github.com/facebookresearch/BLINK) that exploits time and type constraints based on knowledge extrapolated from Wikidata Knowledge Graph to eliminate implausible candidates in the candidates' retrieval phase.
 
