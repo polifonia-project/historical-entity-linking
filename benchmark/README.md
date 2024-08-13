@@ -8,7 +8,7 @@ We aim to mitigate the need for gold-standard resources containing NERC- and EL-
 
 | Dataset                     | Lang. | #docs | #sents | #tokens |
 |-----------------------------|-------|--------|---------|----------|
-| MHERCL v1.0 | EN    | 76   | 875   | 27.549 |
+| MHERCL v1.0 | EN    | 76   | 875   | 27,549 |
 
 
 #### MHERCL v1.0 - Named Entities Superficial Mentions Stats
@@ -16,11 +16,10 @@ We aim to mitigate the need for gold-standard resources containing NERC- and EL-
 
 |        | #mentions | #types | noisy    | NIL      |
 |--------|-----------|---------|----------|----------|
-| all    | 2.378   | N/A      | 0,14  | 0,30|
-| unique | 1.829     | 59    | N/A | 0,38 |
+| all    | 2,370   | N/A      | 0.14  | 0.30|
+| unique | 1,805     | 58   | N/A | 0.38 |
 
-As summarised in the tables above, MHERCL v1.0 is made of 875 sentences, extrapolated from 76 documents (historical periodicals). MHERCL v1.0 includes 1.829 unique named entities belonging to 59 different types. On the total of annotated named entity mentions, 30% could not be linked to a QID. Those are cases in which the annotators could not identify a Wikidata entry corresponding to the named entity mention. Those cases are annotated with the label NIL. On the total of annotated named entity mentions, 14% are _noisy_, namely impacted by errors due to OCR.
-
+As the tables above summarise, MHERCL v1.0 comprises 875 sentences extrapolated from 76 documents (historical periodicals). MHERCL v1.0 includes 1,805 unique named entities belonging to 58 different types. Of the annotated named entity mentions, 30% could not be linked to a QID. In those cases, the annotators could not identify a Wikidata entry corresponding to the named entity. Those cases are annotated with the label NIL. On the total of annotated named entity mentions, 14% are _noisy_, namely impacted by errors due to OCR.
 
 ## Exploratory Study
 
@@ -40,70 +39,21 @@ The annotated sentences of MHERCL v1.0 were extrapolated from the [Polifonia Tex
 
 MHERCL v1.0 sentences are manually annotated. The annotations focus on Named Entities Recognition, Classification and Linking. Thanks to the work of two interns (Foreign Languages and Literature undergraduate students, both Italian native speakers, one graduating in English and Spanish Language and Literature, the other graduating in Russian and Spanish) who have received training on the NERC and EL annotation task. 
 
-Generally, the annotation work was performed under the criteria that a named entity is a real-world thing indicating a unique individual through a proper noun. The annotation work of the interns involved inspecting the sentences and identifying the named entities, eventually linking them to their corresponding Wikidata ID (QID).
+Generally, the annotation work was performed under the criteria that a named entity is a real-world thing indicating a unique individual through a proper noun. The interns' annotation work involved inspecting the sentences and identifying the named entities, eventually linking them to their corresponding Wikidata ID (QID).
 
 | named entity type   | #occurrences |
 |------------------------------|------------------------|
 | person                       | 1253                   |
-| city                         | 251                    |
-| music                        | 188                    |
-| organization                 | 94                     |
+| city                         | 262                    |
+| music                        | 187                    |
+| organization                 | 93                     |
 | work-of-art                  | 85                     |
-| country                      | 78                     |
+| country                      | 80                     |
 | building                     | 52                     |
 | opera                        | 52                     |
-| theatre                      | 41                     |
+| theatre                      | 42                     |
 | worship-place                | 41                     |
-| publication                  | 26                     |
-| book                         | 24                     |
-| road                         | 24                     |
-| company                      | 16                     |
-| school                       | 16                     |
-| city-district                | 13                     |
-| magazine                     | 9                      |
-| event                        | 8                      |
-| festival                     | 8                      |
-| street                       | 7                      |
-| mountain                     | 6                      |
-| university                   | 6                      |
-| government-organization      | 5                      |
-| college                      | 4                      |
-| facility                     | 4                      |
-| local-region                 | 4                      |
-| county                       | 4                      |
-| continent                    | 4                      |
-| journal                      | 3                      |
-| square                       | 3                      |
-| song                         | 3                      |
-| concert                      | 3                      |
-| location                     | 3                      |
-| river                        | 3                      |
-| museum                       | 3                      |
-| newspaper                    | 3                      |
-| country-region               | 3                      |
-| symphony                     | 2                      |
-| religious-group              | 2                      |
-| thing                        | 2                      |
-| person                       | 2                      |
-| family                       | 2                      |
-| language                     | 1                      |
-| band                         | 1                      |
-| province                     | 1                      |
-| island                       | 1                      |
-| park                         | 1                      |
-| empire                       | 1                      |
-| hotel                        | 1                      |
-| scholarship                  | 1                      |
-| institution                  | 1                      |
-| village                      | 1                      |
-| town                         | 1                      |
-| books                        | 1                      |
-| person (fictional character) | 1                      |
-| lake                         | 1                      |
-| hall                         | 1                      |
-| society                      | 1                      |
-| military                     | 1                      |
-| Grand Total                  | 2377                   |
+
 
 Named entities were recognised, classified and linked following the [AMR named entity annotations guidelines](https://amr.isi.edu/doc/amr-dict.html\#named\%20entity).
 The types were assigned according to the [AMR annotation guidance instructions](https://www.isi.edu/~ulf/amr/lib/popup/ne-type-selection.html) and extrapolated from the [AMR named entity types list](https://www.isi.edu/~ulf/amr/lib/ne-types.html). 
@@ -114,12 +64,13 @@ A full list of the types used for Named Entities classification is in the table 
 
 | #sents | #tokens (Tot.) | # matching tokens (Annotated) | # unmatching tokens (Annotated) | Krippendorf's alpha |
 |--------------------------|----------------------------------|------------------------------------------|------------------|--------------------|
-| 101 | 6.589        | 656                 | 124              | 0,82 |
+| 101 | 6,589        | 656                 | 124              | 0.82 |
 
 
-Inter-annotator agreement (IAA) measures the reliability of human annotations by estimating consistency among annotators. To measure IAA, we made two annotators independently annotate 27 sentences. We calculated Krippendorff's alpha for nominal metric on the resulting annotations using [Fast Krippendorf](https://github.com/pln-fing-udelar/fast-krippendorff). We opted for Krippendorff's alpha for its flexibility and resilience in handling missing values. We obtained the following result: 0.82654. 
+Inter-annotator agreement (IAA) measures the reliability of human annotations by estimating consistency among annotators. To measure IAA, we made two annotators independently annotate 101 sentences. We calculated Krippendorff's alpha for nominal metric on the resulting annotations using [Fast Krippendorf](https://github.com/pln-fing-udelar/fast-krippendorff). We opted for Krippendorff's alpha for its flexibility and resilience in handling missing values. We obtained the following result: 0.82. 
 
 ## Format
+### CoNLL-U
 
 ```#document_date:1873
 #sent_text:A native of Parma, ateighteen years of age ‘Jong was received into the Conservatory of Music of that town, where ‘Jong soon made himself.a name as the most promising pupil of the institution.
@@ -161,5 +112,8 @@ of	O	_	of	ADP
 the	O	_	the	DET
 institution	O	_	institution	NOUN
 .	O	_	.	PUNCT
+```
 
+### JSONL
 
+MHERCL is available on [HuggingFace](https://huggingface.co/datasets/n28div/MHERCL) in JSONL format.
